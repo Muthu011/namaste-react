@@ -1,7 +1,7 @@
 # REACT APP
 
-
 # Parcel
+
 - DEV build
 - Local Server
 - HMR (Hot Module Replacement)
@@ -15,7 +15,7 @@
 - Differential Bundling - supporting older browsers
 - Code Splitting
 - Diagnostics
-- Error Handling 
+- Error Handling
 - HTTPS
 - Tree Shaking (Remove unused codes)
 
@@ -28,7 +28,7 @@
 
 # COMPONENT
 
-- Function vs Class component 
+- Function vs Class component
 - React or React native have no official file structure based on team and developer it can be adapted
 
 # REACT HOOKS
@@ -40,8 +40,8 @@
 # RECONCILIATION ALGORITH
 
 - This is also know as React Fibre
-- DOM is like tree which has several branches 
-- When UI changes from filtering data's. What React does is REACT creates a virtual DOM which is not actuall DOM. 
+- DOM is like tree which has several branches
+- When UI changes from filtering data's. What React does is REACT creates a virtual DOM which is not actuall DOM.
 
 - Virtual DOM is a representation of a actuall DOM.
 
@@ -60,10 +60,44 @@
 - React for frontend, node or java spring for backend
 - Services will be running on their own port
 
-# ROUTING 
+# ROUTING
 
 - react-router-dom
 
 # 2 types of Routing in web apps
-- client side routing 
-- server side routing 
+
+- client side routing
+- server side routing
+
+# Class Based Component
+
+- Render Hierarchy
+  - Constructor
+  - Render
+  - Child(class component again will call constructor , render and life cycle method )
+  - Component did mount
+
+eg : Below is the example of how the component renders and fires the functions and event.
+
+- Parent Constructor
+- Parent Render
+
+  <RENDER Phase starts and batching as well>
+   - First Child Constructor
+   - First Child Render
+
+   - Second Child Constructor
+   - Second Child Render
+
+<DOM MANIPULATION STARTS>
+    - First Child Componentdidmount
+    - Second Child Componentdidmount
+
+- Parent Componentdidmount
+
+- LifeCycle Methods in Class based component
+
+  - ComponentDidMount => Used to make an API call. Once the component loads this method is being fired once.
+  - component
+
+- There are two phases render phase (constructor and render) and commit phase(update DOM and componentdidmount )
