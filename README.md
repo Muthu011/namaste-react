@@ -101,3 +101,20 @@ eg : Below is the example of how the component renders and fires the functions a
   - component
 
 - There are two phases render phase (constructor and render) and commit phase(update DOM and componentdidmount )
+
+- NEVER EVER compare class lifecyle methods to functional useEffects 
+
+# Custom Hooks
+
+- creating own custom hooks, normal javascript functins with use has prefix.
+- for fetch API , get online status can be written custom hooks
+
+# Optimization
+
+- Chunking, lazy loading, code splitting
+- Suspense Component 
+
+# Tailwind CSS
+
+- Rapidly build modern website without ever leaving your HTML 
+- 
